@@ -1,5 +1,8 @@
 // src/styles/_custom.scss
 
+// Use your custom variables
+@use './variables' as vars;
+
 .navbar {
   transition: all 0.3s ease;
 
@@ -21,5 +24,71 @@
     &:hover::after {
       width: 100%;
     }
+  }
+}
+
+
+
+.about-hero {
+  // Use a gradient based on your custom primary color
+  background: linear-gradient(135deg, vars.$primary 0%, darken(vars.$primary, 15%) 100%);
+  border-radius: 0 0 2rem 2rem;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.1) !important;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+}
+
+// Hero Section Styles
+.hero-section {
+  min-height: 80vh;
+  background-color: vars.$primary; // Using your variable!
+  background-image: linear-gradient(135deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+}
+
+.text-accent {
+  color: #00d2ff; // Bright contrast color
+}
+
+.hero-img {
+  max-height: 450px;
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.2));
+}
+
+// Icon Boxes
+.icon-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 1.5rem;
+}
+
+// Soft backgrounds for icons (using tint-color logic)
+.bg-primary-soft { background-color: rgba(vars.$primary, 0.1); }
+.bg-success-soft { background-color: rgba(#198754, 0.1); }
+.bg-info-soft { background-color: rgba(#0dcaf0, 0.1); }
+
+// Feature Card Hover
+.feature-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
   }
 }

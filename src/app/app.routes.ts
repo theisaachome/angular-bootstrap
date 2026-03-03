@@ -7,8 +7,8 @@ import {Contact} from './features/contact/contact';
 
 export const routes: Routes = [
   {path:'',component:Home},
-  {path:'',component:Users},
-  {path:'',component:Products},
-  {path:'',component:About},
-  {path:'',component:Contact},
+  {path:'users',component:Users},
+  {path:'products',component:Products},
+  {path:'about',component:About},
+  {path:'contact',component:Contact},
 ];

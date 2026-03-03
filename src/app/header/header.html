@@ -8,19 +8,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{'exact':true}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Users</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/users">Users</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Product</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/products">Product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/contact">Contact</a>
         </li>
       </ul>
     </div>

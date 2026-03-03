@@ -8,6 +8,48 @@ $info: #11cdef;
 $light: #f7fafc;
 $dark: #32325d;
 
+// Brand colors
+$primary: #6a11cb;
+$secondary: #f368e0;
+
+// Semantic colors
+$success: #2dce89;
+$info: #11cdef;
+$warning: #fb6340;
+$danger: #f5365c;
+
+// Neutral colors
+$light: #f7fafc;
+$dark: #32325d;
+
+// Additional useful overrides
+$body-bg: #ffffff;
+$body-color: #32325d;
+$border-color: #e3e3e3;
+$link-color: $primary;
+$link-hover-color: darken($primary, 15%);
+
+// Navbar specific (since you're using navbar-dark)
+$navbar-dark-color: rgba(255, 255, 255, 0.55);
+$navbar-dark-hover-color: rgba(255, 255, 255, 0.75);
+$navbar-dark-active-color: #ffffff;
+
+// Button and component sizing
+$btn-border-radius: 0.375rem;
+$border-radius: 0.375rem;
+
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  #6c757d,
+  "success":    $success,
+  "info":       #17a2b8,
+  "warning":    #ffc107,
+  "danger":     #dc3545,
+  "light":      #f8f9fa,
+  "dark":       #343a40
+);
+
 // Override spacing
 $spacer: 1rem;
 
