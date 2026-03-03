@@ -1,0 +1,25 @@
+// src/styles/_custom.scss
+
+.navbar {
+  transition: all 0.3s ease;
+
+  .nav-link {
+    font-weight: 500;
+    margin: 0 5px;
+    position: relative;
+
+    // Custom underline hover effect
+    &::after {
+      content: '';
+      width: 0;
+      height: 2px;
+      display: block;
+      background: #fff;
+      transition: width 0.3s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

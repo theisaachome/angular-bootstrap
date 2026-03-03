@@ -1,0 +1,10 @@
+// 1. Import your overrides first
+@use './variables';
+
+// 2. Import Bootstrap (Required parts or all)
+@use 'bootstrap/scss/bootstrap';
+
+// 3. Import your custom styles last
+@use './custom';
+
+
