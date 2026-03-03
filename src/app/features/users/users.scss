@@ -1,0 +1,19 @@
+// src/styles/_custom.scss
+
+.list-group-no-sides {
+  .list-group-item {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0; // Optional: removes rounded corners
+
+    // Optional: Remove the very top border of the first item
+    &:first-child {
+      border-top: 0;
+    }
+
+    // Optional: Remove the very bottom border of the last item
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}

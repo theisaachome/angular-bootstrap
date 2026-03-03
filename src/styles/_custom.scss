@@ -92,3 +92,14 @@
     box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
   }
 }
+
+
+.list-group-item-action {
+  // Override the hover background and text color
+  --bs-list-group-action-hover-bg: #7babe8;    // Your custom light blue
+  --bs-list-group-action-hover-color: #0d6efd; // Your custom primary text
+
+  // Optional: Active state (when clicked)
+  --bs-list-group-action-active-bg: #0d6efd;
+  --bs-list-group-action-active-color: #fff;
+}
