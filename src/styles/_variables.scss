@@ -9,7 +9,7 @@ $light: #f7fafc;
 $dark: #32325d;
 
 // Brand colors
-$primary: #6a11cb;
+$primary: #8351bb;
 $secondary: #f368e0;
 
 // Semantic colors
@@ -58,3 +58,52 @@ $font-family-base: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 $font-size-base: 1rem;
 
 // Add more overrides as needed
+
+
+$primary:    #6a11cb;
+$secondary:  #2575fc;
+$success:    #00b09b;
+$info:       #17a2b8;
+$warning:    #ffc107;
+$danger:     #ff416c;
+$light:      #f8f9fa;
+$dark:       #212529;
+
+// To add custom colors to the theme
+$custom-colors: (
+  "brand-alt": #f39c12
+);
+
+$font-family-sans-serif: 'Poppins', sans-serif;
+$font-size-base: 1rem; // Default is usually 16px
+$h1-font-size: $font-size-base * 2.5;
+$headings-font-weight: 700;
+$headings-color: $dark;
+
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 5 // Adding a new, larger spacing tier
+);
+
+$enable-shadows: true;      // Turns on box-shadows globally
+$enable-gradients: true;    // Adds subtle gradients to buttons/navs
+$rounded-pill: 50rem;       // For extra-rounded UI
+$border-radius: 0.5rem;     // Global corner rounding
+
+
+// Hover state for List Groups
+$list-group-action-hover-bg: rgba($primary, 0.1);
+$list-group-action-hover-color: $primary;
+
+// Hover state for Table rows
+$table-hover-bg-factor: .075; // Adjusts how dark/light the hover is
+
+// Hover state for Buttons
+$btn-hover-filter: brightness(90%); // Darkens button slightly on hover
